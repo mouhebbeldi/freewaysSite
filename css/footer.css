@@ -1,0 +1,121 @@
+/*footer */
+
+    .footerTop{
+
+   
+    width:100% ;
+    position: inherit;
+    text-align: center;
+    margin-top: 20px;
+    bottom: 0%;
+    }
+    footer{
+        height: 55vh;
+        padding-top:10vh ;
+        padding-bottom:10vh ;
+    background: #111;
+
+    text-align: center;
+    
+    }
+    footer img{
+    height: 55px;
+    width:55px ;
+    border-radius: 50%;
+    }
+    footer span{
+    color: navajowhite;
+    cursor: pointer;
+    }
+    
+    footer span:hover{
+    color: #fff;
+    }
+  
+    .pi{
+        color: honeydew;
+    }
+    .btns{
+    
+    display:inline-block;
+    width:80px;
+    height: 40px;
+    background: #f1f1f1;
+    margin:5%;
+    border-radius: 30%;
+    
+    padding: 10px ;
+    box-shadow: 0 5px 15px -5px #ffffffe8;
+    overflow: hidden;
+    border: none;
+    position: relative;
+    }
+    .btns i{
+    line-height: 80px;
+    font-size: 26px;
+    transition: .03s linear;
+    
+    color:darkgreen;
+    }.btns:hover p{
+    transform: scale(1.2);
+    color:antiquewhite;
+    
+    }
+    .btns::before{
+    
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: green;
+    transform: rotate(45deg);
+    left:-110%;
+    top:90%;
+    }
+    .btns:hover::before{
+    
+    animation: animate 1s ;
+    top: 0%;
+    left: 0%;
+    
+    }
+    
+    
+    @keyframes animate {
+    0%{
+    top: -110%;
+    left:90%;
+    
+    }  
+    50%{
+    top: 50%;
+    left: -30%;
+    
+    } 
+    100%{
+    top: 0%;
+    left: 0%;
+    
+    }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*footer ends here */
