@@ -13,7 +13,8 @@
   
   <link href="css/style.css" rel='stylesheet' type='text/css' />
   <link href="css/footer.css" rel='stylesheet' type='text/css' />
-  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="path/to/lightbox.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
  
 
@@ -41,7 +42,7 @@
 
   <div id="home" class="header">
     <div class="container">
-        <div class="dropdown show">
+        <div class="dropdown show" >
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               language
             </a>
@@ -160,7 +161,8 @@
     <div class="col-md-6 about-left">
       <div id="owl-demo1 row " >
         <div class="item col col-md-6">
-          <div class="about-left-grid">
+          <div class="about-left-grid" data-aos="fade-up"
+          data-aos-anchor-placement="top-center">
             <h2>aS A<span> FREEWAYS MEMBER</span></h2>
             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
                 "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain... </p>
@@ -170,7 +172,7 @@
               </ul>
           </div>
         </div>
-        <div class="item col col-md-6">
+        <div class="item col col-md-6"  data-aos="fade-left">
           <div class="about-left-grid">
             <h2>aS A <span>TEAM LEADER</span></h2>
             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
@@ -199,7 +201,10 @@
         <span class="border two"></span>
       </div>
       <div class="card-group">
-          <div class="card">
+          <div class="card" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-sine">
             <img class="card-img-top" src="images/problemSolving/ieeextreme/img1.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title"><span>P</span>roblem <span>S</span>olving</h5>
@@ -207,7 +212,9 @@
               <button type="button" class="btn btn-lg btn-success" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click  popover</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="600">
             <img class="card-img-top" src="images/hlp/session1/img2.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title"><span>H</span>igh <span>L</span>evel <span>P</span>rogramming</h5>
@@ -216,7 +223,10 @@
 
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-left"
+       
+          data-aos-offset="300"
+          data-aos-duration="600">
             <img class="card-img-top" src="images/codeinthedark/img7.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title"><span>IOT</span> and <span>R</span>obotics</h5>
@@ -296,19 +306,31 @@
     <div class="container">
 
       <div class="news-grid w3l-agile">
-        <div class="col-md-6 news-img">
+        <div class="col-md-6 news-img"  data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-sine">
            <img src="images/codeinthedark/img1.jpg" alt=" " class="img-responsive">
         </div>
-        <div class="col-md-6 news-text">
-          <h3> <a href="#" >code in the dark 1.0</a></h3>
-          <ul class="news">
+        <div class="col-md-6 news-text" >
+          <h3  data-aos="fade-left"
+          data-aos-offset="100"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-sine"> <a href="#" >code in the dark 1.0</a></h3>
+          <ul class="news"  data-aos="fade-out"
+          data-aos-offset="300"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-sine">
             <li>challenges</li>
             <li>15 min coding</li>
             <li>no live server view port</li>
             <li>300 dt cash prize</li>
             
           </ul>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... 
+          <p  data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... 
               , who seeks after it and wants to have it, simply because it is pain... 
               Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... 
              
@@ -324,7 +346,40 @@
      <!-- 465554444444444444444444444444444444444355555555555555555555 -->
   
 
-
+<article>
+  <div >
+   
+    <a href="1.png" data-lightbox="roadtrip">
+      <img 
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-sine"
+      width='33%' 
+      height="400vh" 
+      src="1.png" 
+      alt=""></a>
+    <a href="2.png" data-lightbox="roadtrip">
+      <img  
+      data-aos="fade-top"
+      data-aos-offset="300"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-sine"
+      width='33%' 
+      height="400vh" 
+      src="2.png" 
+      alt=""></a>
+    <a href="3.jpg" data-lightbox="roadtrip"><img  
+      data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-sine"
+      width='33%' 
+      height="400vh"
+      src="3.jpg" 
+      alt=""></a>
+  </div>
+</article>
  
   <!-- *************************************** -->
 
@@ -382,8 +437,18 @@
   <!--end-smooth-scrolling-->
   <!-- //for bootstrap working -->
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
-
+  <script src="path/to/lightbox.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
 </body>
 
 </html>
